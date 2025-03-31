@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="/static/css/styles.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body>
+      
+        <div class="navigation-buttons1">
+
+            <img class="brand-logo" src="static/images/brand-logo.png">
+
+
+            <div class="button-con1">
+                <a class="nav-links" href="http://127.0.0.1:5004/portfolio_homepage">
+                    <button class="nav-button" >Home</button>
+                </a>
+                <a class="nav-links" href="http://127.0.0.1:5004/aboutme">
+                    <button class="nav-button" >About Me</button>
+                </a>
+                <a class="nav-links" href="http://127.0.0.1:5004/skills">
+                    <button class="nav-button" >Skills</button>
+                </a>
+                <a class="nav-links" href="http://127.0.0.1:5004/Projects">
+                    <button class="nav-button" >Projects</button>
+                </a>
+                <a class="nav-links" href="http://127.0.0.1:5004/contact/info">
+                    <button  class="nav-button">Contact</button>
+                </a>
+        
+    
+
+            </div>
+
+            
+           
+        </div>
+     
+
+        <div class="title-con">
+
+            <h2 class="aboutme-title">Projects</h2>
+           
+
+        </div>
+           
+            
+                
+                <div id="card" class="card">
+                    <div id="project1" class="project-con" >
+                        <h2>Digital BookStore- ShelfSpace</h2>
+                        <p>A digital e-commerce web application that sells eBooks. This website was configured with Flask for its backend logic and HTML, CSS, and Javascript for its frontend logic. It handles standard user functionality such as account creation, user authentication, a shopping cart, and user account management. It also utilizes Flask-Firewall, a custom-built firewall I have developed for protecting Flask web applications against common web vulnerabilities, which is showcased next.  </p>
+                        
+                        <p><img class="projects-icon" src="static/images/github-icon.png"> <a href="https://github.com/Dvtt0253/Digital-Bookstore-Shop.git">Click here</a> to view the Github repository for the digital bookstore(ShelfSpace) to view the installation and usage instructions as well as the source code.</p>
+                        <p><img class="projects-icon" src="static/images/download-icon.png"> <a href="https://github.com/Dvtt0253/Digital-Bookstore-Shop/archive/refs/heads/main.zip">Click here</a> to download the ZIP files for the project to run and view the website on your local machine. Please refer to the 'ReadMe.md' file for in depth instructions on running the app.</p>
+                        <p><img class="projects-icon" src="static/images/video-icon.png"> <a href="https://drive.google.com/drive/folders/1tzoSzPOW6Vlq4D9VJZwics7ACSoyuMjc?usp=drive_link">Click here</a> to view the demo videos for ShelfSpace and see all of its features in action. </p>
+
+                        <div class="project-pictures">
+                            <img onclick="open_image('static/images/shelfpace-pic1.png')" class="project-photo" src="static/images/shelfpace-pic1.png">
+                            <img onclick="open_image('static/images/shelfspace-pic2.png')" class="project-photo" src="static/images/shelfspace-pic2.png">
+                            <img onclick="open_image('static/images/shelfspace-pic4.png')" class="project-photo" src="static/images/shelfspace-pic4.png">
+                            
+
+                        </div>
+                        
+                        
+
+
+
+                    </div>
+                    <div id="project2"class="project-con" style="display:none;"> 
+                        <h2>Flask-Firewall</h2>
+                        <p>A web firewall that is configured to protect Flask web applications from common vulnerabilities such as DDoS attacks(Denial of service), SQL and XSS injections, brute force attacks, and CRSF attacks. It enforces rate limits and failed login attempt restrictions to prevent DDoS and brute force attacks. If these limits are surpassed, the firewall sends a warning to the violating IP address and temporarily blacklists it. Repeated violations result in the IP address being permanently blacklisted. Additionally, the firewall sanitizes all user input to detect and block malicious payloads or code injection attempts. If a payload attack is detected, the IP address is permanently blacklisted to prevent future attacks. Moreover, the firewall generates and validates CSRF tokens to simplify the inclusion of CSRF protections.  </p>
+
+                        <p><img class="projects-icon" src="static/images/github-icon.png"> <a href="https://github.com/Dvtt0253/Flask-Firewall.git">Click here</a> to view the Github repository, where the source code and the installation and usage instructions can be found.</p>
+                        <p><img class="projects-icon" src="static/images/download-icon.png"> <a href="https://github.com/Dvtt0253/Flask-Firewall/archive/refs/heads/main.zip">Click here</a> to download the Flask-Firewall ZIP to use it within your own applications. In depth download and setup instructions can be found in the "readme.md" file.</p>
+                        <p><img class="projects-icon" src="static/images/video-icon.png"> <a href="https://drive.google.com/drive/folders/1tzoSzPOW6Vlq4D9VJZwics7ACSoyuMjc?usp=drive_link">Click here</a> to see a demonstration of the firewall in action within the ShelfSpace application. Jump to videos 5-7 to view the firewall related demonstrations. </p>
+                        <div class="project-pictures">
+                            <img onclick="open_image('static/images/firewall-pic1.jpg')" class="project-photo" src="static/images/firewall-pic1.jpg">
+                            <img onclick="open_image('static/images/firewall-pic2.jpg')" class="project-photo" src="static/images/firewall-pic2.jpg">
+                            <img onclick="open_image('static/images/firewall-pic3.jpg')" class="project-photo" src="static/images/firewall-pic3.jpg">
+
+                        </div>
+                        
+
+                    </div>
+                    <div id="project3" class="project-con" style="display:none;">
+                        <h2>Coming Soon!</h2>
+
+                    </div>
+                    <div class="next-back">
+                        
+                        <button class="back_button" onclick="previous_project()">Back</button>
+                        <button class="next_button" onclick="next_project()">Next</button>
+
+                    </div>
+                    
+               
+
+
+                <script>
+                    const projects = document.querySelectorAll('.project-con')
+                    let index = 0;
+                    
+                    function next_project() {
+                       
+                        projects[index].style.display = 'none';
+                        
+                        index = (index + 1) % projects.length;
+
+                        projects[index].style.display = 'block';
+
+                       
+
+                    
+
+                       
+                    }
+                    function previous_project() {
+                        projects[index].style.display = 'none';
+
+                        if (index > 0) {
+
+                            index = (index - 1) % projects.length;
+
+                        }
+
+                        
+
+                        projects[index].style.display = 'block';
+
+                    }
+
+
+                </script>
+                <div id="lightbox" class="lightbox" style="display:none;">
+                    <button onclick="close_image()" class="exit-lightbox">x</button>
+                    <img id="selected-photo" class="selected-photo" src="">
+
+                </div>
+
+
+                <script>
+                    const lightbox = document.getElementById('lightbox');
+                    const lightbox_photo = document.getElementById('selected-photo');
+
+                    function open_image (src) {
+                        lightbox_photo.src = src;
+                        lightbox.style.display = 'block';
+
+
+                    }
+
+                    function close_image() {
+                        lightbox.style.display = 'none';
+                    }
+
+                </script>
+                
+    </body>
+</html>

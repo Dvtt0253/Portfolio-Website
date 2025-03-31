@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="/static/css/styles.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="navigation-buttons1">
+
+            <img class="brand-logo" src="/static/images/brand-logo.png">
+
+
+            <div class="button-con1">
+                <a class="nav-links" href="http://127.0.0.1:5004/portfolio_homepage">
+                    <button class="nav-button" >Home</button>
+                </a>
+                <a class="nav-links" href="http://127.0.0.1:5004/aboutme">
+                    <button class="nav-button" >About Me</button>
+                </a>
+                <a class="nav-links" href="http://127.0.0.1:5004/skills">
+                    <button class="nav-button" >Skills</button>
+                </a>
+                <a class="nav-links" href="http://127.0.0.1:5004/Projects">
+                    <button class="nav-button" >Projects</button>
+                </a>
+                <a class="nav-links" href="http://127.0.0.1:5004/contact/info">
+                    <button  class="nav-button">Contact</button>
+                </a>
+        
+    
+
+            </div>
+
+            
+           
+        </div>
+        <div class="title-con">
+
+            <h2 class="aboutme-title">Contact Me</h2>
+           
+
+        </div>
+    <div class=flash_message>
+
+   
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <ul>
+                {% for category, message in messages %}
+                    <li class="flash_messages">{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+        {% endwith %}
+    </div>
+<div class="contact-container">
+    <div class="contact-info">
+        <h1 class="Bcard-title">Joie Harvey</h1>
+        <p class="Bcard-profession">Full-Stack Developer</p>
+        <p class="Bcard-email">Dvtt0253@gmail.com</p>
+        <hr>
+
+       
+        
+        <p class="Bcard-number">Contact Number: +1 (708)-446-8652</p>
+        <p class="Bcard-number">Whatsapp Number: +1 (708)-446-8652 </p>
+        <div class="vertical-line"></div>
+
+        <img class="Bcard-logo" src="/static/images/brand-logowhite.png" >
+    </div>
+
+        <form action="/send_message" method="POST">
+        <div class="contact-form">
+            <h2>Send a Message </h2>
+            
+               
+
+            
+            <div class="other_input">
+                <label class="contact-label" for="first-name">First Name: </label>
+                <input class="contact-input" type="text" name="first-name" id="first-name" required>
+                <label class="contact-label" for="last-name">Last Name: </label>
+                <input class="contact-input" type="text" name="last-name" id="last-name" required>
+                <label class="contact-label" for="email">Email: </label>
+                <input class="contact-input" type="email" id="email" name="email" required>
+                <label class="contact-label" for="subject">Subject: </label>
+                <input class="contact-input" type="text" name="subject" id="subject" required>
+                <label class="contact-label" for="message">Your Message: </label>
+                <textarea class="contact-input" name="message" id="message" rows="10"></textarea>
+
+            </div>
+            
+
+            <button class="send_button" type="submit">Send</button>
+
+
+
+        </div>
+            
+        </form>
+</div>
+    </body>
+</html>
