@@ -21,6 +21,8 @@ import flask_firewall
 app = Flask(__name__)
 
 firewall = flask_firewall.Firewall(50,60)
+firewall.startTempBlacklist_removal()
+firewall.startperiodic_check()
 
 app.secret_key = secrets.token_hex(32)
 
