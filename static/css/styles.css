@@ -77,6 +77,11 @@ body{
     
    
 }
+.demo-login{
+    display:block;
+    font-size: 14px;
+    font-weight: bold;
+}
 .nav-button{
     display:inline;
     width:auto;
@@ -153,7 +158,7 @@ body{
 .navigation-buttons1{
     display:block;
     display:flex;
-    width:100%;
+    width:100vw;
     height:60px;
    
     align-items: center;
@@ -260,7 +265,7 @@ body{
 .t-skills{
     display:block;
     width:520px;
-    height:600px;
+    height:650px;
     margin-top: 350px;
     padding-top: 20px;
     padding-right:20px;
@@ -300,6 +305,7 @@ li{
     box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     position:relative;
+    
 
 }
 .project-con{
@@ -310,6 +316,7 @@ li{
     padding-left:20px;
     padding-right:20px;
     padding-top:20px;
+    font-size: 16px;
 }
 .projects-icon{
     display:inline;
@@ -319,22 +326,25 @@ li{
 }
 .next_button{
     display:inline;
-    width:9.37vw;
+    width:7.37vw;
     height:4.70vh;
+    font-size: 12px;
     
    
 
 
-    background-color: black;
-    color:white;
-    border-radius: 8px;
+    background-color: #f2f2f2;
+    color:black;
+    border-radius: 0px;
     font-weight: bolder;
     cursor:pointer;
     text-align: center;
     padding-left:5px;
     padding-right:5px;
+    border:2px solid black;
   
     padding-bottom:5px;
+    margin-left:-5px;
    
    
 
@@ -343,14 +353,16 @@ li{
 .back_button{
 
     display:inline;
-    width:9.37vw;
+    width:7.37vw;
     height:4.70vh;
+    font-size: 12px;
    
 
 
-    background-color: black;
-    color:white;
-    border-radius: 8px;
+    background-color: #f2f2f2;
+    color:black;
+    border-radius: 0px;
+    border: 2px solid black;
     font-weight: bolder;
     cursor:pointer;
     text-align: center;
@@ -361,6 +373,10 @@ li{
    
 
     
+
+}
+.next_button:hover,.back_button:hover{
+    background-color: #e0e0e0;
 
 }
 .project-photo{
@@ -747,22 +763,20 @@ form{
 
 .next_button{
     display:inline;
-    width:8.37vw;
+    width:7.37vw;
     height:2.70vh;
+    font-size:12px;
     
    
 
 
-    background-color: black;
-    color:white;
-    border-radius: 8px;
-    font-weight: bolder;
-    cursor:pointer;
+    
     text-align: center;
     padding-left:5px;
     padding-right:5px;
   
     padding-bottom:5px;
+    margin-left:-5px;
    
    
 
@@ -771,16 +785,13 @@ form{
 .back_button{
 
     display:inline;
-    width:8.37vw;
+    width:7.37vw;
     height:2.70vh;
+    font-size:12px;
    
 
 
-    background-color: black;
-    color:white;
-    border-radius: 8px;
-    font-weight: bolder;
-    cursor:pointer;
+   
     text-align: center;
     padding-left:5px;
     padding-right:5px;
@@ -791,7 +802,6 @@ form{
     
 
 }
-
 .lightbox{
     display:block;
     width:100%;
@@ -994,7 +1004,7 @@ form{
         position:absolute;
         top:25vw;
       
-        left:-89vw;
+        left:-80vw;
 
     
     
@@ -1050,9 +1060,16 @@ form{
     box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
     
 }
+.project-con{
+    font-size:9px;
+    width:90vw;
+}
+.demo-login{
+    font-size: 8px;
+}
 .card{
     display:block;
-    width:60.67vw;
+    width:100vw;
     height:100.07vh;
     max-width:900px;
     background-color:white;
@@ -1071,17 +1088,14 @@ form{
    
 
 
-    background-color: black;
-    color:white;
-    border-radius: 8px;
-    font-weight: bolder;
-    cursor:pointer;
+   
     text-align: center;
     padding-left:5px;
     padding-right:5px;
-    font-size: 9px;
+    font-size:9px;
   
     padding-bottom:5px;
+    margin-left:-5px;
    
    
 
@@ -1092,18 +1106,14 @@ form{
     display:inline;
     width:12.37vw;
     height:2.70vh;
+    font-size:9px;
    
 
 
-    background-color: black;
-    color:white;
-    border-radius: 8px;
-    font-weight: bolder;
-    cursor:pointer;
+   
     text-align: center;
     padding-left:5px;
     padding-right:5px;
-    font-size: 9px;
     
     padding-bottom:5px;
    
@@ -1450,21 +1460,18 @@ align-items: center;
     display:inline;
     width:7.37vw;
     height:2.70vh;
+    font-size:13px;
     
    
 
 
-    background-color: black;
-    color:white;
-    border-radius: 8px;
-    font-weight: bolder;
-    cursor:pointer;
+    
     text-align: center;
     padding-left:5px;
     padding-right:5px;
-    font-size: 12px;
   
     padding-bottom:5px;
+    margin-left:-5px;
    
    
 
@@ -1475,18 +1482,14 @@ align-items: center;
     display:inline;
     width:7.37vw;
     height:2.70vh;
+    font-size:13px;
    
 
 
-    background-color: black;
-    color:white;
-    border-radius: 8px;
-    font-weight: bolder;
-    cursor:pointer;
+   
     text-align: center;
     padding-left:5px;
     padding-right:5px;
-    font-size: 12px;
     
     padding-bottom:5px;
    
@@ -1555,11 +1558,31 @@ align-items: center;
     border-radius:32px;
     opacity:0.4;
 }
+
+.navigation-buttons1{
+    width:100vw;
+}
     
     
     
 
 
+}
+@media(min-width:500px) and (max-width:599px) {
+    .text-container{
+        display:block;
+        word-wrap: break-word;
+        width: 300px;
+        padding-top:390px;
+        position:absolute;
+        top:25vw;
+      
+        left:-60vw;
+
+    
+    
+
+}
 }
 
 
