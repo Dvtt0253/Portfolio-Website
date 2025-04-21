@@ -601,24 +601,13 @@ form{
 
 }
 .github-redirect{
-    display: block;
-    background-color:white;
-    position: absolute;
-    top:50vh;
-    left: 2vw;
-  
-    
-}
-.github-text{
-    color: navy;
-    font-size: 12px;
-}
-.github-redirectimage{
     display:block;
-    width: 40px;
-    margin:auto;
+    font-size:12px;
+    color:#FF4D4D;
 }
-
+.redirect-anchor{
+    color:#FF4D4D
+}
 
 @media (max-width:900px) and (min-width:601px) {
     #contact-email{
