@@ -600,6 +600,26 @@ form{
     left:10px;
 
 }
+.github-redirect{
+    display: block;
+    background-color:white;
+    position: absolute;
+    top:50vh;
+    left: 2vw;
+  
+    
+}
+.github-text{
+    color: navy;
+    font-size: 12px;
+}
+.github-redirectimage{
+    display:block;
+    width: 40px;
+    margin:auto;
+}
+
+
 @media (max-width:900px) and (min-width:601px) {
     #contact-email{
 
