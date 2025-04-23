@@ -149,6 +149,7 @@ body{
     margin-top:91px;
     background-color: black;
     
+   
 }
 
 .nav-button:hover{
@@ -603,11 +604,12 @@ form{
 .github-redirect{
     display:block;
     font-size:12px;
-    color:#FF4D4D;
+    color:white;
 }
 .redirect-anchor{
     color:#FF4D4D
 }
+
 
 @media (max-width:900px) and (min-width:601px) {
     #contact-email{
